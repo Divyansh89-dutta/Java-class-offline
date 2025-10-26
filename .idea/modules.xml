@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Class-02/Class-02.iml" filepath="$PROJECT_DIR$/Class-02/Class-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/New folder (6).iml" filepath="$PROJECT_DIR$/.idea/New folder (6).iml" />
+      <module fileurl="file://$PROJECT_DIR$/String-class/String-class.iml" filepath="$PROJECT_DIR$/String-class/String-class.iml" />
       <module fileurl="file://$PROJECT_DIR$/class-03/class-03.iml" filepath="$PROJECT_DIR$/class-03/class-03.iml" />
       <module fileurl="file://$PROJECT_DIR$/class-04/class-04.iml" filepath="$PROJECT_DIR$/class-04/class-04.iml" />
       <module fileurl="file://$PROJECT_DIR$/class-05/class-05.iml" filepath="$PROJECT_DIR$/class-05/class-05.iml" />
@@ -23,7 +24,10 @@
       <module fileurl="file://$PROJECT_DIR$/class-19/class-19.iml" filepath="$PROJECT_DIR$/class-19/class-19.iml" />
       <module fileurl="file://$PROJECT_DIR$/class-20/class-20.iml" filepath="$PROJECT_DIR$/class-20/class-20.iml" />
       <module fileurl="file://$PROJECT_DIR$/class-21/class-21.iml" filepath="$PROJECT_DIR$/class-21/class-21.iml" />
+      <module fileurl="file://$PROJECT_DIR$/class-23/class-23.iml" filepath="$PROJECT_DIR$/class-23/class-23.iml" />
       <module fileurl="file://$PROJECT_DIR$/partice-class/partice-class.iml" filepath="$PROJECT_DIR$/partice-class/partice-class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sheet/sheet.iml" filepath="$PROJECT_DIR$/sheet/sheet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timespacecomplexity/timespacecomplexity.iml" filepath="$PROJECT_DIR$/timespacecomplexity/timespacecomplexity.iml" />
     </modules>
   </component>
 </project>

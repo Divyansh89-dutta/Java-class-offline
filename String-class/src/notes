@@ -1,0 +1,146 @@
+What is complexity?
+how fast it runs -> time complexity
+how uch memory it uses -> space complexity
+Complexity ≠ actual seconds of execution.
+It tells how performance changes as input grows.
+example :-
+if code runs for 10 numbers, what if you have 10000 or 1,000,000 number?
+complexity helps predict that!
+🔹 1. Time Complexity
+
+Time complexity measures how many steps (operations) your code needs as input size N grows.
+
+Think of it as:
+
+How many times will my loop or statement execute for N elements?
+
+Example 1: Constant Time — O(1)
+int a = 10;
+System.out.println(a);
+only 1 step - no matter what N is
+time complexity o(1) -> constant
+
+Example 2: Linear Time — O(N)
+for(int i = 0; i < N; i++) {
+    System.out.println(i);
+}
+Runs N times.
+If N = 5 → 5 prints,
+Time Complexity: O(N) → Linear.
+
+Example 3: Quadratic Time — O(N²)
+for(int i = 0; i < N; i++) {
+    for(int j = 0; j < N; j++) {
+        System.out.println(i + "," + j);
+    }
+}
+For every i, loop runs N times again.
+Total steps = N × N → N² steps
+Time Complexity: O(N²) → Quadratic.
+
+Example 4: Logarithmic — O(log N)
+int i = 1;
+while(i < N) {
+    i = i * 2;  // doubles each time
+}
+Values of i: 1, 2, 4, 8, 16, …
+Stops when i > N
+So only log₂(N) steps.
+Time Complexity: O(log N) → Logarithmic.
+
+Example 5: Exponential — O(2ⁿ)
+void recur(int n) {
+    if(n == 0) return;
+    recur(n - 1);
+    recur(n - 1);
+}
+Each call makes 2 more calls.
+So total calls grow like 2ⁿ.
+Time Complexity: O(2ⁿ) → Exponential (very slow).
+
+Order of Common Complexities (Fast → Slow)
+| Complexity | Name        | Example                |
+| ---------- | ----------- | ---------------------- |
+| O(1)       | Constant    | Access array element   |
+| O(log N)   | Logarithmic | Binary Search          |
+| O(N)       | Linear      | Single loop            |
+| O(N log N) | Log-linear  | Merge Sort, Quick Sort |
+| O(N²)      | Quadratic   | Nested loops           |
+| O(2ⁿ)      | Exponential | Recursion with 2 calls |
+| O(N!)      | Factorial   | Permutations           |
+
+2. Big O, Theta, Omega
+| Symbol   | Meaning | Case                        |
+| -------- | ------- | --------------------------- |
+| **O(N)** | Big Oh  | Worst case (upper bound)    |
+| **θ(N)** | Theta   | Average case (middle bound) |
+| **Ω(N)** | Omega   | Best case (lower bound)     |
+Example:
+For Linear Search in an array:
+
+Best Case (Ω(1)): Element found at start
+
+Average Case (θ(N/2)): Middle
+
+Worst Case (O(N)): Element not found
+
+Ignoring Constants and Small Terms
+
+When writing complexity:
+
+Ignore constants (2N → O(N))
+
+Ignore small terms (N² + N → O(N²))
+
+Because for large inputs, the biggest term dominates.
+
+Time Limit and Constraints
+
+💡 Approximation:
+A computer performs 10⁸ operations per second.
+| Time Limit | Maximum N possible | Complexity |
+| ---------- | ------------------ | ---------- |
+| 1 second   | 10⁸                | O(N)       |
+| 1 second   | 10⁴                | O(N²)      |
+| 1 second   | 20                 | O(2ⁿ)      |
+
+5. Space Complexity
+
+Space complexity =
+📦 Memory used by inputs + Extra memory (auxiliary space)
+
+int sumArray(int[] arr) {
+    int sum = 0;  // local variable → O(1)
+    for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+No new array created → O(1) space.
+If you make a new array → O(N) space.
+
+6. When Complexity Grows Too Much (TLE)
+
+If your code takes too long (more than 1 second),
+you’ll get a Time Limit Exceeded (TLE).
+
+⚠️ Common causes:
+
+Nested loops with large N
+
+Unnecessary recursion
+
+Not breaking early from loops
+
+Quick Summary Table
+| Type           | Example              | Description    |
+| -------------- | -------------------- | -------------- |
+| **O(1)**       | Access array element | Fastest        |
+| **O(log N)**   | Binary Search        | Efficient      |
+| **O(N)**       | Single loop          | Moderate       |
+| **O(N log N)** | Merge Sort           | Acceptable     |
+| **O(N²)**      | Nested loops         | Slow           |
+| **O(2ⁿ)**      | Recursion            | Very slow      |
+| **O(N!)**      | Permutations         | Extremely slow |
+
