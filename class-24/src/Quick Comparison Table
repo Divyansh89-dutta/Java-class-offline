@@ -1,0 +1,9 @@
+| Feature           | ArrayList     | LinkedList             | Vector           | Stack           |
+| ----------------- | ------------- | ---------------------- | ---------------- | --------------- |
+| Implements        | List          | List, Deque            | List             | Vector          |
+| Order             | Yes           | Yes                    | Yes              | Yes             |
+| Duplicates        | Allowed       | Allowed                | Allowed          | Allowed         |
+| Thread-safe       | No            | No                     | Yes              | Yes             |
+| Access by index   | Fast (O(1))   | Slow (O(n))            | Fast (O(1))      | Fast (O(1))     |
+| Insert/Delete mid | Slow (O(n))   | Fast (O(1))            | Slow (O(n))      | N/A             |
+| Use Case          | Random access | Frequent insert/delete | Thread-safe list | LIFO operations |
