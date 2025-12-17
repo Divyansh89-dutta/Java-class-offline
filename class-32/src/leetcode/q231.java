@@ -20,3 +20,4 @@ public class q231 {
         System.out.println(sol.isPowerOfTwo(0));  // false
     }
 }
+
